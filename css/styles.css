@@ -146,6 +146,14 @@ h3 {
 .header__contacts li + li {
   margin-left: 50px;
 }
+.header__contacts li {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.header__contacts li > a {
+  margin-left: 10px;
+}
 .contacts__link {
   font-weight: 500;
   font-size: 14px;
@@ -153,6 +161,53 @@ h3 {
   text-decoration: none;
   color: #000;
 }
-.header__contacts a:hover {
+.contacts__link a {
+  margin-left: 10px;
+}
+.header__contacts li:hover a {
+  color: var(--action-color);
+}
+.header__contacts li:hover svg {
+  fill: var(--action-color);
+}
+.icon {
+  fill: #757575;
+}
+
+/*=========FOOTER===========*/
+.footer {
+  background-color: var(--footer-bg-color);
+}
+.footer__logo {
+  margin: 60px 0 20px 15px;
+}
+.footer__logo span {
+  color: #ffff;
+}
+.footer__contacts {
+  font-style: normal;
+  padding: 0 0 60px 0;
+}
+.f-contacts__list {
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+.f-contacts__list li {
+  display: block;
+  margin: 0 0 9px 0;
+}
+.f-contacts__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.f-contacts__list li:first-child .f-contacts__link {
+  color: #ffff;
+}
+.f-contacts__list li:first-child .f-contacts__link:hover {
+  color: var(--action-color);
+}
+.f-contacts__link:hover {
   color: var(--action-color);
 }
