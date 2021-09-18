@@ -7,7 +7,7 @@
   --section-title-color: #212121;
   --common-text-color: #757575;
 
-  --card-set-gap: 20px;
+  --card-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -184,6 +184,9 @@ h3 {
 .footer__logo span {
   color: #ffff;
 }
+.footer_row{
+  display: flex;
+}
 .footer__contacts {
   font-style: normal;
   padding: 0 0 60px 0;
@@ -210,4 +213,91 @@ h3 {
 }
 .f-contacts__link:hover {
   color: var(--action-color);
+}
+.f-social{
+  display: flex;
+}
+.f-social li{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+  .f-social li + li{
+    margin-left: 10px;
+  }
+  .f-social__link a{
+    text-align: center;
+  }
+
+
+
+/* PORTFOLIO */
+.portfolio__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+.portfolio__list > .item{
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.item__card {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card-content {
+  padding: 15px;
+}
+.card-text {
+  margin-top: 10px;
+}
+.portfolio__filter{
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.portfolio__filter li +li {
+  margin-left: 8px;
+
+}
+.filter__btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: inherit;
+}.filter__btn.active {
+  background: var(--action-color);
+  color: #ffff;
+}
+.filter__btn:hover {
+  background: var(--action-color);
+  color: #ffff;
+}
+
+.item__content {
+  padding: 20px 24px;
+}
+
+.item__group {
+  margin-top: 4px;
 }
