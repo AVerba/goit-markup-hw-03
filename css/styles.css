@@ -237,13 +237,13 @@ h3 {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
 }
-.f-social li + li {
+.f-social__list li + li {
   margin-left: 10px;
 }
-.f-social li:hover svg {
+.f-social__list li:hover svg {
   fill: #ffff;
 }
-.f-social li:hover {
+.f-social__list li:hover {
   background-color: var(--action-color);
 }
 
