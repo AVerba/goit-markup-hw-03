@@ -8,6 +8,7 @@
   --common-text-color: #757575;
 
   --card-set-gap: 30px;
+  --card-respons-set-gap: 30px;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -51,7 +52,7 @@ address {
 
 /* CONTAINER */
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -59,7 +60,7 @@ address {
   margin-right: auto;
 }
 .section {
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 /*=========TITLE=============*/
@@ -203,22 +204,21 @@ h3 {
 /*=========RESPONS===========*/
 .respons__list {
   display: flex;
-
-  /*   margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap)); */
+  margin-left: calc(-1 * var(--card-respons-set-gap));
+  /*  margin-top: calc(-1 * var(--card-set-gap)); */
 }
 .respons__list li + li {
   margin-left: 30px;
 }
 .respons__item {
-  padding-right: 20px;
-  /*   flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap); */
+  flex-basis: calc(100% / 3 - var(--card-respons-set-gap));
+  margin-left: var(--card-respons-set-gap);
+  /*  margin-top: var(--card-set-gap); */
 }
 
 .respons__item h3 {
   text-align: left;
+  margin-bottom: 10px;
 }
 .respons__item p {
   font-size: 14px;
@@ -226,9 +226,14 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--common-text-color);
   text-align: left;
-  padding: 0 5px 0 0;
 }
 /*=========TASKS===========*/
+.tasks {
+  padding-top: 0;
+}
+.tasks__title {
+  margin-bottom: 50px;
+}
 .page__team {
   background-color: var(--team-bg-color);
 }
@@ -237,6 +242,12 @@ h3 {
   justify-content: space-between;
 }
 /*=========TEAM===========*/
+.team {
+  /* padding-top: 0; */
+}
+.team__title {
+  margin-bottom: 50px;
+}
 .team__list {
   display: flex;
   justify-content: space-between;
@@ -365,7 +376,6 @@ h3 {
 .portfolio__filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .portfolio__filter li + li {
