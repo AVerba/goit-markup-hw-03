@@ -51,7 +51,7 @@ address {
 
 /* CONTAINER */
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -173,7 +173,89 @@ h3 {
 .icon {
   fill: #757575;
 }
+/*=========BANNER===========*/
+.banner {
+  background-color: var(--banner-bg-color);
+  padding: 179px 0;
+  text-align: center;
+}
+.banner h1 {
+  padding: 0 23%;
+}
+.banner button {
+  width: 200px;
+  height: 50px;
+  margin: 30px 0 0 0;
+  text-align: center;
+  background: var(--action-color);
+  color: #ffff;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  border: inherit;
+}
+/*=========RESPONS===========*/
+.respons__list {
+  display: flex;
 
+  /*   margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap)); */
+}
+.respons__list li + li {
+  margin-left: 30px;
+}
+.respons__item {
+  padding-right: 20px;
+  /*   flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap); */
+}
+
+.respons__item h3 {
+  text-align: left;
+}
+.respons__item p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--common-text-color);
+  text-align: left;
+  padding: 0 5px 0 0;
+}
+/*=========TASKS===========*/
+.tasks__list {
+  display: flex;
+  justify-content: space-around;
+}
+/*=========TEAM===========*/
+.team__list {
+  display: flex;
+  justify-content: space-around;
+}
+.team__item {
+  max-width: calc(100% / 4 - var(--card-set-gap));
+  background-color: #ffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item p:first-of-type {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team__item p:last-of-type {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--common-text-color);
+}
 /*=========FOOTER===========*/
 .footer {
   background-color: var(--footer-bg-color);
