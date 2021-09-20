@@ -58,6 +58,9 @@ address {
   margin-left: auto;
   margin-right: auto;
 }
+.section {
+  padding-bottom: 94px;
+}
 
 /*=========TITLE=============*/
 /* H1 */
@@ -226,14 +229,17 @@ h3 {
   padding: 0 5px 0 0;
 }
 /*=========TASKS===========*/
+.page__team {
+  background-color: var(--team-bg-color);
+}
 .tasks__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /*=========TEAM===========*/
 .team__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .team__item {
   max-width: calc(100% / 4 - var(--card-set-gap));
